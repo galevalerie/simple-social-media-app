@@ -1,0 +1,9 @@
+GETTING STARTED
+Note: Make sure that node.js and create-react-app is installed in your system
+1. Access the project in github
+2. Clone the project to your local repository
+3. In your local repository, open the project using your desired IDE
+4. Open terminal. Make sure that your are inside the local project
+5. Run npm install
+6. Run npm start
+7. View browser
