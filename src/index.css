@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c292b;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #2c292b;
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c5aa60;
+  padding: 0 10%;
+}
+
+header .logo {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+header .greetings {
+  font-size: 1rem;
+  color: white;
+  text-align: right;
+}
+
+u:hover {
+  color: #c49f69;
+  cursor: pointer;
+}
+
+.content {
+  margin: 3rem auto;
+  max-width: 50rem;
+}
+
+.form {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.newPostForm textarea {
+  display: block;
+  font: inherit;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 0.25rem;
+  width: 100%;
+}
+
+.newPostAction .charCount {
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+.newPostAction {
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.newPostAction button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #c49f69;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #c49f69;
+  border-radius: 4px;
+  font-weight: bold;
+  float: right;
+}
+
+.newPostAction button:hover,
+.newPostAction button:active {
+  background-color: #be914c;
+  border-color: #be914c;
+}
+
+.newPostAction button:disabled {
+  background-color: #74644c;
+  border-color: #74644c;
+}
+
+.newsFeed {
+  margin-top: 5rem;
+}
+
+.newsFeed ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.postItem {
+  margin: 1rem 0;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.postContent {
+  padding: 1rem;
+}
+
+.postContent p {
+  margin: auto;
+  text-align: left;
+}
+
+.postContent span {
+  font-size: 0.5rem;
+  text-align: right;
+}
+
+.postContent textarea {
+  display: block;
+  font: inherit;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 0.25rem;
+  width: 100%;
+}
+
+.postContent .charCount {
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+.postItemAction {
+  padding: 1.5rem;
+  text-align: right;
+}
+
+.postItemAction button {
+  font: inherit;
+  cursor: pointer;
+  color: #574e3b;
+  border: 1px solid #c49f69;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin: 2px;
+}
+
+.postItemAction button:hover,
+.postItemAction button:active {
+  background-color: #ffe3b8;
+}
+
+.postItemAction button:disabled {
+  background-color: #74644c;
+  border-color: #74644c;
+}
+
+.modal {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 30rem;
+  z-index: 10;
+  position: fixed;
+  top: 20vh;
+  left: calc(50% - 15rem);
+}
+.modal button {
+  font: inherit;
+  cursor: pointer;
+  color: #574e3b;
+  border: 1px solid #c49f69;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin: 2px;
+}
+
+.modal button:hover,
+.modal button:active {
+  background-color: #ffe3b8;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
